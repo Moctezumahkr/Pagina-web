@@ -127,14 +127,10 @@ textarea {
     font-size: 1.2em;
     text-align: center;
   }
-  h1{
-    font-family: 'Roboto', sans-serif;
-    font-size: 5em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
-    font-weight: 300;
-  }
+h1{
+	color: #ffffff;
+}
+ 
   h2{
     font-family: 'Roboto', sans-serif;
     font-size: 2.4em;
@@ -218,13 +214,27 @@ textarea {
     background-size: cover;
     text-align: center;   
   }
+.h1{
+	font-size: 2em;
+	 text-transform: uppercase;
+    text-align: center;
+     color: #ffffff;
+	 font-family: 'Roboto', sans-serif;
+}
+
   div.contenido-header {
     padding-top: 20px;
   }
   @media only screen and (min-width:768px) {
     div.contenido-header {
-      padding-top: 0.5em;
+      padding-top: 0.5em; 
     }
+	  div.contenido-header h1{
+		   
+    font-size: 5em;
+    font-weight: 300;
+		  
+	  }
   }
   div.slider{    
     text-decoration: underline overline;
@@ -234,9 +244,14 @@ textarea {
     margin: 3% 20%;
   }
   p.slide{
-    font-size: 3em;
+    font-size: 1.5em;
     color: #fff;
     border: 2px solid #ffffff;
+  }
+  @media only screen and (min-width:768px){
+    p.slide{
+      font-size: 3em;
+    }
   }
   div.redes{
     color: #ffffff;
@@ -405,14 +420,17 @@ div.menu-movil span{
       
   }
   div.service .servicios p{
-    font-size: 1.8em;
+    font-size: 1.3em;
     text-transform: lowercase;
     text-align: center;
     padding: 0.5em 0.8em 0 1.5em;
   }
   @media only screen and (min-width:768px){
-    div.service .servicios p{
+    div.service {
       padding: 3.8em 1em 0 3em;
+    }
+    .servicios p{
+      font-size: 1.8em;
     }
   }
   
@@ -471,14 +489,27 @@ div.menu-movil span{
       grid-template-columns: repeat(4, 1fr);
     }
   }
-  div.servizio p{
+  div.servizio1 p{
     color: #ffffff;
     font-family: "lato", sans-serif;
     font-size: 0.8em;
   }
   @media (min-width:768px){
-    div.servizio p{
+    div.servizio1 p{
       font-size: 1em;
+    }
+  }
+  div.servizio2 {
+    display: none;
+  }
+  @media (min-width:768px){
+    div.servizio2 p{
+      color: #ffffff;
+    font-family: "lato", sans-serif;
+    font-size: 0.8em;
+    }
+    div.servizio2{
+      display: block;
     }
   }
 
